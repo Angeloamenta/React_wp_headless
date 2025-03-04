@@ -16,9 +16,6 @@ function PostDetail() {
 
   return (
     <div>
-        <div>
-            <Link to ="/">Home</Link>
-        </div>
       <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
       <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
     </div>
