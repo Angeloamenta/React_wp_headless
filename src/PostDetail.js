@@ -12,7 +12,7 @@ function PostDetail() {
       .catch((error) => console.error("Errore nel recupero del post:", error));
   }, [id]);
 
-  if (!post) return <p>Caricamento...</p>;
+  if (!post) return <div class="lds-circle"><div></div></div>;
 
   return (
     <div>
